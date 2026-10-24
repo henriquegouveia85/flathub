@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Accu-Chek Reader
+Comment=Read glucose readings from Roche Accu-Chek Active USB
+Exec=accu-chek-reader dump --out %U
+Icon=com.github.henriquegouveia85.accu-chek-reader
+Terminal=true
+Type=Application
+Categories=Utility;Science;
+StartupNotify=true

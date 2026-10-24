@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.henriquegouveia85.accu-chek-reader</id>
+  <name>Accu-Chek Reader</name>
+  <summary>Read glucose readings from Roche Accu-Chek Active USB</summary>
+  <description>
+    <p>Cliente Linux para ler leituras de glicemia do glicosímetro Roche Accu-Chek Active via USB usando ISO/IEEE 11073-20601.</p>
+    <p>Leituras são salvas em JSON e relatório HTML autocontido com métricas clínicas.</p>
+  </description>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <url type="homepage">https://github.com/henriquegouveia85/accu-chek-active-linux</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Relatório HTML gerado</caption>
+    </screenshot>
+  </screenshots>
+  <developer_name>Henrique Gouveia</developer_name>
+  <launchable type="desktop-id">com.github.henriquegouveia85.accu-chek-reader.desktop</launchable>
+</component>

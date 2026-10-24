@@ -1,0 +1,26 @@
+app-id: com.github.henriquegouveia85.accu-chek-reader
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+command: accu-chek-reader
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=all
+  - --filesystem=home
+  - --filesystem=xdg-data
+  - --filesystem=xdg-config
+modules:
+  - name: accu-chek-reader
+    buildsystem: simple
+    build-commands:
+      - pip3 install --prefix=/app .
+      - install -Dm755 ${FLATPAK_BUILDER_TMP}/accu-chek-reader.wrapper /app/bin/accu-chek-reader
+    sources:
+      - type: git
+        url: https://github.com/henriquegouveia85/accu-chek-active-linux.git
+        commit: bbee0556abe017d02b05728c471a8118414800e9
+      - type: file
+        name: accu-chek-reader.wrapper
+        path: ../accu-chek-reader.wrapper
